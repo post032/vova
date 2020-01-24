@@ -157,6 +157,10 @@ input[type="radio"].visually-hidden {
   top: -355px;
   right: calc(100% - 754px);
 }
+.header__block .sms {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
 @media (min-width: 768px) {
   .header__bg {
     background: url(../img/bg-d.svg) no-repeat 75% 100%;
@@ -642,8 +646,7 @@ input[type="radio"].visually-hidden {
   padding-top: 1px;
   padding-bottom: 30px;
 }
-.instruction__block,
-.instruction__block2 {
+.instruction__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,37 +675,13 @@ input[type="radio"].visually-hidden {
   width: 344px;
   height: 665px;
 }
-.instruction__img--horizon {
-  width: 665px;
-  height: 344px;
-  margin-top: -5px;
-}
-.instruction__scroll__hidden {
-  height: 344px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.instruction__scroll {
-  width: 100vw;
-  height: 354px;
-  overflow-x: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .instruction__arrow {
   width: 66px;
   height: 63px;
   background: url("../img/arrow-d.svg") no-repeat top center;
   background-size: contain;
 }
-.instruction__block2 .sms {
-  margin-right: 20px;
-}
 @media (min-width: 768px) {
-  .instruction__scroll {
-    width: 665px;
-  }
   .instruction__text {
     max-width: 685px;
   }
@@ -736,24 +715,11 @@ input[type="radio"].visually-hidden {
             justify-content: flex-end;
     position: relative;
   }
-  .instruction__block2 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
   .instruction__arrow {
     width: 130px;
     height: 130px;
-    background: url("../img/arrow.svg") no-repeat;
-    background-size: contain;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    position: absolute;
-    top: 14px;
-    left: calc(100% - 680px);
-  }
-  .instruction__block2 .sms {
-    margin-right: 50px;
-    margin-bottom: 30px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 }
 @media (min-width: 1586px) {
@@ -763,18 +729,6 @@ input[type="radio"].visually-hidden {
   .instruction__img {
     width: 400px;
     height: 770px;
-  }
-  .instruction__scroll__hidden,
-  .instruction__scroll,
-  .instruction__img--horizon {
-    width: 770px;
-    height: 400px;
-  }
-  .instruction__arrow {
-    width: 230px;
-    height: 230px;
-    top: 34px;
-    left: calc(100% - 784px);
   }
 }
 .footer__bg {

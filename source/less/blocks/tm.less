@@ -1,0 +1,35 @@
+.tm {
+  width: 318px;
+  min-height: 80px;
+  background: linear-gradient(180deg, #1287E2 0%, #0071BB 100%);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.tm__name::before {
+  content: "";
+  width: 51px;
+  height: 44px;
+  display: block;
+  background: url("../img/tm.svg") no-repeat;
+  position: absolute;
+  left: -9px;
+  top: -6px;
+}

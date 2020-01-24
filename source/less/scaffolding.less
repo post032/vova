@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 360px;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "roboto", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  background-color: @basic-color;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 360px;
+  position: relative;
+}
+
+@media (min-width: @size-tablet) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 768px;
+    position: relative;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1586px;
+    position: relative;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "lobster";
+  src: url("../fonts/Lobster.woff2") format("woff2"), url("../fonts/Lobster.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/RobotoLight.woff2") format("woff2"), url("../fonts/RobotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/RobotoMedium.woff2") format("woff2"), url("../fonts/RobotoMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}

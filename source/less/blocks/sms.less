@@ -1,0 +1,170 @@
+.sms {
+  height: auto;
+  position: relative;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  display: flex;
+  margin-right: 20px;
+}
+
+.sms__margin {
+  margin-top: -15px;
+}
+
+.sms--revers {
+  margin-right: 0;
+  margin-left: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 0;
+}
+
+.sms--width300 {
+  width: 300px;
+}
+
+.sms--width250 {
+  width: 250px;
+}
+
+.sms--width275 {
+  width: 275px;
+}
+
+.sms--width290 {
+  width: 290px;
+}
+
+.sms--white {
+  background-color: #ffffff;
+}
+
+.sms--orange {
+  background: linear-gradient(180deg, #F2994A 0%, #E37209 100%);
+}
+
+.sms--orange::before {
+  background: #F2994A;
+}
+
+.sms--green {
+  background: linear-gradient(180deg, #27AE60 0%, #219653 84.89%);
+}
+
+.sms--green::before {
+  background: #27AE60;
+}
+
+.sms::after {
+  background: #ffffff;
+}
+
+.sms::after,
+.sms::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.sms--white::after {
+  background-color: #b3e4ff;
+}
+
+.sms::after {
+  border-top-left-radius: 100%;
+  top: 1px;
+}
+
+.sms--revers::after {
+  border-top-left-radius: 0;
+  border-top-right-radius: 100%;
+  top: 1px;
+}
+
+.sms--right::after {
+  right: -20px;
+}
+
+.sms--left::after {
+  left: -20px;
+}
+
+.sms--white::before {
+  background: #ffffff;
+}
+
+.sms::before {
+  top: 0;
+}
+
+.sms--right::before {
+  right: -19px;
+}
+
+.sms--left::before {
+  left: -19px;
+}
+
+.sms--position-left {
+  align-self: flex-start;
+}
+
+.sms--position-right {
+  align-self: flex-end;
+}
+
+.sms__text {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: normal;
+  margin: 17px 21px 21px;
+}
+
+.sms__text--size {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sms__text--margin {
+  margin: 21px 21px 26px 26px;
+}
+
+.sms__text--black {
+  color: #333333;
+}
+
+.sms__text--white {
+  color: #ffffff;
+}
+@media (min-width: @size-tablet) {}
+@media (min-width: @size-note) {
+  .sms--width300 {
+    width: 480px;
+  }
+
+  .sms__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px 35px;
+  }
+
+  .sms--width250 {
+    width: 470px;
+  }
+
+  .sms--width275,
+  .sms--width290 {
+    width: 640px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .sms {
+    align-self: center;
+  }
+
+  .sms--position-right {
+    margin-right: 187px;
+    align-self: flex-end;
+  }
+}

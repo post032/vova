@@ -1,0 +1,143 @@
+.instruction {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1px;
+  padding-bottom: 30px;
+}
+
+.instruction__block,
+.instruction__block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instruction__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.instruction__text .desktop {
+  display: none;
+}
+
+.instruction__img {
+  width: 344px;
+  height: 665px;
+}
+
+.instruction__img--horizon {
+  width: 665px;
+  height: 344px;
+  margin-top: -5px;
+}
+
+.instruction__scroll__hidden {
+  height: 344px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.instruction__scroll {
+  width: 100vw;
+  height: 354px;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.instruction__arrow {
+  width: 66px;
+height: 63px;
+background: url("../img/arrow-d.svg") no-repeat top center;
+background-size: contain;
+}
+
+.instruction__block2 .sms {
+  margin-right: 20px;
+}
+
+@media (min-width: @size-tablet) {
+  .instruction__scroll {
+    width: 665px;
+}
+
+.instruction__text {
+  max-width: 685px;
+}
+}
+@media (min-width: @size-note) {
+  .instruction__text .mobile {
+    display: none;
+  }
+
+  .instruction__text .desktop {
+    display: inline;
+  }
+
+  .instruction__text {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 103px;
+    margin-bottom: 87px;
+  }
+
+  .instruction__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .instruction__block2 {
+    align-self: flex-end;
+  }
+
+  .instruction__arrow {
+    width: 130px;
+    height: 130px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: contain;
+    align-self: flex-start;
+    position: absolute;
+    top: 14px;
+    left: calc(100% - 680px);
+  }
+  .instruction__block2 .sms {
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .instruction {
+    padding-bottom: 106px;
+  }
+.instruction__img {
+  width: 400px;
+  height: 770px;
+}
+.instruction__scroll__hidden,
+.instruction__scroll,
+.instruction__img--horizon {
+  width: 770px;
+  height: 400px;
+}
+
+.instruction__arrow {
+    width: 230px;
+    height: 230px;
+    top: 34px;
+    left: calc(100% - 784px);
+  }
+}
